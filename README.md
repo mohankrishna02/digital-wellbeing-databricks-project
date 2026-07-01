@@ -17,7 +17,7 @@ The pipeline ingests a global **Digital Wellbeing & Mental Health** dataset, per
 ## 🏗️ Architecture
 
 <p align="center">
-<img src="screenshots/architecture.png" width="850">
+<img src="screenshots/Architecture.png" width="850">
 </p>
 
 ### Pipeline Flow
@@ -46,7 +46,7 @@ Databricks Workflow
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -62,12 +62,16 @@ Databricks Workflow
 ## Dashboard Preview
 
 <p align="center">
-<img src="screenshots/dashboard.png" width="900">
+<img src="screenshots/Dashboard1.png" width="900">
+</p>
+
+<p align="center">
+<img src="screenshots/Dashboard2.png" width="900">
 </p>
 
 ---
 
-# ⚙️ Databricks Workflow
+## ⚙️ Databricks Workflow
 
 The ETL pipeline is orchestrated using **Databricks Workflows**.
 
@@ -82,14 +86,24 @@ Silver Transformations
       ▼
 Gold Aggregations
 ```
+WorkFlow Preview
+
+<p align="center">
+<img src="screenshots/Worflow.png" width="900">
+</p>
 
 ---
 
-### Workflow Success
+### SuccessFull WorkFlow Preview
 
 <p align="center">
-<img src="screenshots/workflow_success.png" width="850">
+<img src="screenshots/SuccessfullWorkflow.png" width="850">
 </p>
+
+<p align="center">
+<img src="screenshots/SuccessfullWorkflow1.png" width="850">
+</p>
+
 
 ---
 
@@ -97,20 +111,32 @@ Gold Aggregations
 
 A validation failure was intentionally created to demonstrate production-style workflow monitoring.
 
-Example
+#### Example
 
-- Existing table conflict
-- Validation failure
-- Workflow stops
-- Downstream tasks skipped
+```text
+NoteBook doesn't exists 
+          │
+          ▼
+Validation Failure
+          │
+          ▼
+Workflow Stops
+          │
+          ▼
+Downstream Tasks Skipped
+```
+<p align="center">
+<img src="screenshots/FailureWorkflow1.png" width="850">
+</p>
 
 <p align="center">
-<img src="screenshots/workflow_failure.png" width="850">
+<img src="screenshots/FailureWorkflow2.png" width="850">
 </p>
+
 
 ---
 
-# 🚀 How to Run
+## How to Run
 
 1. Upload the dataset into Databricks.
 2. Create the Bronze table.
@@ -129,8 +155,7 @@ Example
 ```
 
 4. Run the Databricks Workflow.
-5. Open the Databricks Dashboard.
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star!
+### ⭐ If you found this project useful, consider giving it a star!
